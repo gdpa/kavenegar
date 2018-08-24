@@ -1,0 +1,39 @@
+{
+    "name": "gdpa/kavenegar",
+    "description": "Kavenegar Notifications driver",
+    "homepage": "https://github.com/gdpa/kavenegar",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Morteza Poussaneh",
+            "email": "morteza.poussaneh@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "guzzlehttp/guzzle": "~6.0",
+        "illuminate/notifications": "5.*",
+        "illuminate/support": "5.*"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.0",
+        "phpunit/phpunit": "^6.4",
+        "orchestra/testbench": "^3.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "NotificationChannels\\Kavenegar\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NotificationChannels\\Kavenegar\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
