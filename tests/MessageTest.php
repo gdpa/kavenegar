@@ -11,7 +11,7 @@ class MessageTest extends TestCase
     /** @var \NotificationChannels\Kavenegar\KavenegarMessage */
     protected $message;
 
-    public function setUp()
+    protected function setUp(): void
     {
         parent::setUp();
 
